@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_swamp",
+  "features": "luckyclover:clover_swamp_placed",
+  "step": "vegetal_decoration"
+}
