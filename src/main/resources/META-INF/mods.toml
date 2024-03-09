@@ -19,6 +19,7 @@ version="1.20.1" #mandatory
 displayName="Lucky Clover" #mandatory
 authors="Lavender" #optional
 logoFile="icon.png"
+credits="vectorwing(sack texture)"
 
 logoBlur=false
 description='''${mod_description}'''
