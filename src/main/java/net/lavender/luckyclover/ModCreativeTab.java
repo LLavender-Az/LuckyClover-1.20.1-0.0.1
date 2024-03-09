@@ -21,9 +21,10 @@ public class ModCreativeTab {
 
                         //blocks
 
+                        pOutput.accept(BlockInit.CLOVER_SACK.get());
                         pOutput.accept(BlockInit.CLOVER_PLANT.get());
                         pOutput.accept(ItemInit.FOUR_LEAF_CLOVER.get());
-
+                        pOutput.accept(ItemInit.LUCK_CHARM.get());
 
 
 
