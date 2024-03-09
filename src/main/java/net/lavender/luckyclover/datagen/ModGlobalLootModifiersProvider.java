@@ -12,41 +12,17 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
     @Override
     protected void start() {
 
-   //     add("peach_from_birch_leaves", new AddItemModifier(new LootItemCondition[] {
-   //             LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.BIRCH_LEAVES).build(),
-   //             LootItemRandomChanceCondition.randomChance(0.18f).build()}, FoodInit.PEACH.get()));
+       add("luck_charm_from_bastion_treasure", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/bastion_treasure")).build()}, ItemInit.LUCK_CHARM.get()));
 
-   //     add("pinecone_from_spruce_leaves", new AddItemModifier(new LootItemCondition[] {
-   //             LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.SPRUCE_LEAVES).build(),
-   //             LootItemRandomChanceCondition.randomChance(0.18f).build()}, ItemInit.PINECONE.get()));
+        add("clover_from_pillager_outpost", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/pillager_outpost")).build()}, ItemInit.FOUR_LEAF_CLOVER.get()));
 
-   //     add("lemon_from_mangrove_leaves", new AddItemModifier(new LootItemCondition[] {
-   //             LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.MANGROVE_LEAVES).build(),
-   //             LootItemRandomChanceCondition.randomChance(0.18f).build()}, FoodInit.LEMON.get()));
+        add("clover_from_woodland_mansion", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/woodland_mansion")).build()}, ItemInit.FOUR_LEAF_CLOVER.get()));
 
-   //     add("cherry_from_cherry_leaves", new AddItemModifier(new LootItemCondition[] {
-   //             LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.CHERRY_LEAVES).build(),
-   //            LootItemRandomChanceCondition.randomChance(0.18f).build()}, FoodInit.CHERRY.get()));
-
-   //     add("large_amethyst_from_amethyst", new AddItemModifier(new LootItemCondition[] {
-   //             LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.AMETHYST_CLUSTER).build(),
-   //             LootItemRandomChanceCondition.randomChance(0.08f).build()}, ItemInit.LARGE_AMETHYST_CHUNK.get()));
-
-
-
-
-       // add("peach_from_plains_village", new AddItemModifier(new LootItemCondition[] {
-       //         new LootTableIdCondition.Builder(new ResourceLocation("chests/plains_village")).build()}, FoodInit.PEACH.get()));
-
-       // add("poppy_seeds_from_plains_village", new AddItemModifier(new LootItemCondition[] {
-       //         new LootTableIdCondition.Builder(new ResourceLocation("chests/plains_village")).build()}, FoodInit.POPPY_SEEDS.get()));
-
-       // add("mint_from_plains_village", new AddItemModifier(new LootItemCondition[] {
-       //         new LootTableIdCondition.Builder(new ResourceLocation("chests/plains_village")).build()}, FoodInit.MINT.get()));
-
-       // add("mint_from_taiga_village", new AddItemModifier(new LootItemCondition[] {
-       //         new LootTableIdCondition.Builder(new ResourceLocation("chests/taiga_village")).build() }, FoodInit.MINT.get()));
-
+        add("clover_from_simple_dungeon", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/simple_dungeon")).build()}, ItemInit.FOUR_LEAF_CLOVER.get()));
 
 
     }
