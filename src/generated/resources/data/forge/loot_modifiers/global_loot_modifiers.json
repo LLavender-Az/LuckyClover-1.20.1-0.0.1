@@ -1,4 +1,9 @@
 {
-  "entries": [],
+  "entries": [
+    "luckyclover:luck_charm_from_bastion_treasure",
+    "luckyclover:clover_from_pillager_outpost",
+    "luckyclover:clover_from_simple_dungeon",
+    "luckyclover:clover_from_woodland_mansion"
+  ],
   "replace": false
 }
