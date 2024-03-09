@@ -27,13 +27,6 @@ public class ModEvents {
 
             // Level 1
 
-            //buying
-
-            trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 19),
-                    new ItemStack(ItemInit.FOUR_LEAF_CLOVER.get(), 2),
-                    3, 31, 0.02f));
-
             trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(ItemInit.FOUR_LEAF_CLOVER.get(), 3),
                     new ItemStack(Items.EMERALD, 24),
@@ -43,6 +36,16 @@ public class ModEvents {
                     new ItemStack(Items.EMERALD, 12),
                     new ItemStack(ItemInit.FOUR_LEAF_CLOVER.get(), 1),
                     3, 31, 0.02f));
+
+            trades.get(3).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 19),
+                    new ItemStack(ItemInit.FOUR_LEAF_CLOVER.get(), 2),
+                    3, 31, 0.02f));
+
+            trades.get(4).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(ItemInit.LUCK_CHARM.get(), 1),
+                    new ItemStack(Items.EMERALD_BLOCK, 4),
+                    2, 31, 0.02f));
 
         }
     }
@@ -56,11 +59,13 @@ public class ModEvents {
                 new ItemStack(Items.EMERALD, 12),
                 new ItemStack(ItemInit.FOUR_LEAF_CLOVER.get(), 1),
                 2, 34, 0.2f));
+
         rareTrades.add((pTrader, pRandom) -> new MerchantOffer(
                 new ItemStack(Items.EMERALD, 24),
                 new ItemStack(ItemInit.FOUR_LEAF_CLOVER.get(), 5),
                 1, 65, 0.15f));
     }
 }
+
 
 
