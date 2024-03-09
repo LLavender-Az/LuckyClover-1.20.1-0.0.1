@@ -19,6 +19,7 @@ public class ItemInit {
     public static final RegistryObject<Item> FOUR_LEAF_CLOVER = EDIBLE.register("four_leaf_clover", () -> new net.lavender.luckyclover.common.item.common.LuckyClover(props().rarity(Rarity.EPIC)
             .stacksTo(16).food(Edible.FOUR_LEAF_CLOVER)));
 
+    public static final RegistryObject<Item> LUCK_CHARM = EDIBLE.register("luck_charm", () -> new LuckCharm(props().stacksTo(1).rarity(Rarity.EPIC)));
 
 
 
