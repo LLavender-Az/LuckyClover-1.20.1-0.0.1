@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "luckyclover:block/clover_sack_bottom",
+    "east": "luckyclover:block/clover_sack_side_tied",
+    "north": "luckyclover:block/clover_sack_side",
+    "particle": "luckyclover:block/clover_sack_top",
+    "south": "luckyclover:block/clover_sack_side",
+    "up": "luckyclover:block/clover_sack_top",
+    "west": "luckyclover:block/clover_sack_side_tied"
+  }
+}
