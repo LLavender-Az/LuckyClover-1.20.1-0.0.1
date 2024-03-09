@@ -1,6 +1,7 @@
 package net.lavender.luckyclover.common.item;
 
 import net.lavender.luckyclover.LuckyClover;
+import net.lavender.luckyclover.common.item.common.LuckCharm;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
