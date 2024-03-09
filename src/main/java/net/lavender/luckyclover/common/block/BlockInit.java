@@ -26,6 +26,10 @@ public class BlockInit {
             () -> new FlowerBlock(MobEffects.LUCK, 300, BlockBehaviour.Properties.of().offsetType(BlockBehaviour.OffsetType.XZ)
                     .lightLevel(s -> 4).ignitedByLava().instabreak().sound(SoundType.GRASS).noCollission().mapColor(MapColor.COLOR_LIGHT_GREEN)));
 
+    public static final RegistryObject<Block> CLOVER_SACK = registerBlock("clover_sack",
+            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).instrument(NoteBlockInstrument.GUITAR)
+                    .strength(0.8F).sound(SoundType.WOOL).ignitedByLava()));
+
     public static final RegistryObject<Block> POTTED_CLOVER = BLOCKS.register("potted_clover",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), BlockInit.CLOVER_PLANT, BlockBehaviour.Properties.of()
                     .lightLevel(s -> 5).noOcclusion().instabreak().mapColor(MapColor.COLOR_GREEN).pushReaction(PushReaction.DESTROY)));
