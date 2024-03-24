@@ -1,9 +1,18 @@
 {
   "entries": [
+    "luckyclover:golden_clover_from_mineshaft",
+    "luckyclover:golden_clover_from_underwater_ruin_big",
+    "luckyclover:golden_clover_from_ruined_portal",
     "luckyclover:luck_charm_from_bastion_treasure",
+    "luckyclover:golden_clover_from_woodland_mansion",
+    "luckyclover:golden_clover_from_desert_pyramid",
+    "luckyclover:golden_clover_from_igloo_chest",
+    "luckyclover:clover_from_woodland_mansion",
+    "luckyclover:golden_clover_from_bastion_other",
     "luckyclover:clover_from_pillager_outpost",
     "luckyclover:clover_from_simple_dungeon",
-    "luckyclover:clover_from_woodland_mansion"
+    "luckyclover:golden_clover_from_simple_dungeon",
+    "luckyclover:golden_clover_from_bastion_hoglin_stable"
   ],
   "replace": false
 }

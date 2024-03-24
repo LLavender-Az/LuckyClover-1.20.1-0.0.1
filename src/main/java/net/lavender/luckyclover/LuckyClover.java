@@ -1,9 +1,11 @@
 package net.lavender.luckyclover;
 
 import com.mojang.logging.LogUtils;
-import net.lavender.luckyclover.common.block.BlockInit;
-import net.lavender.luckyclover.common.item.ItemInit;
-import net.lavender.luckyclover.datagen.loot.ModLootModifiers;
+import net.lavender.luckyclover.common.init.block.BlockInit;
+import net.lavender.luckyclover.common.init.item.LCItems;
+import net.lavender.luckyclover.common.datagen.loot.ModLootModifiers;
+import net.lavender.luckyclover.events.Composting;
+import net.lavender.luckyclover.events.ModBrewingRecipeSetup;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
@@ -33,19 +35,20 @@ public class LuckyClover {
         ModCreativeTab.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
-        ItemInit.EDIBLE.register(modEventBus);
+        LCItems.ITEMS.register(modEventBus);
         BlockInit.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
-
+        modEventBus.addListener(Composting::addCompostValues);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
 
-        BrewingRecipeRegistry.addRecipe(new ModBrewingRecipeSetup(Potions.AWKWARD,
-                ItemInit.FOUR_LEAF_CLOVER.get(), Potions.LUCK));
+        BrewingRecipeRegistry.addRecipe(new ModBrewingRecipeSetup(Potions.THICK,
+                LCItems.GOLDEN_CLOVER.get(), Potions.LUCK));
+
 
         event.enqueueWork(() -> {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(BlockInit.CLOVER_PLANT.getId(), BlockInit.POTTED_CLOVER);

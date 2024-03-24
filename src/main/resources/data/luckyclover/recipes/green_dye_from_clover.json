@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "luckyclover:four_leaf_clover"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "minecraft:green_dye"
+  }
+}
