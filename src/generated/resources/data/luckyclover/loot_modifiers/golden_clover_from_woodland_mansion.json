@@ -1,0 +1,10 @@
+{
+  "type": "luckyclover:add_golden_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/woodland_mansion"
+    }
+  ],
+  "item": "luckyclover:golden_clover"
+}

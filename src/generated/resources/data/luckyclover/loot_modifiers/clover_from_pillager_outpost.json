@@ -1,0 +1,10 @@
+{
+  "type": "luckyclover:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/pillager_outpost"
+    }
+  ],
+  "item": "luckyclover:four_leaf_clover"
+}
