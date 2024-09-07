@@ -1,0 +1,9 @@
+{
+  "type": "luckyclover:add_features_by_filter",
+  "allowed_biomes": "minecraft:sparse_jungle",
+  "denied_biomes": ["minecraft:lush_caves", "minecraft:mushroom_fields"],
+  "min_temperature": 0.4,
+  "max_temperature": 0.95,
+  "features": "luckyclover:patch_jungle_clover",
+  "step": "vegetal_decoration"
+}

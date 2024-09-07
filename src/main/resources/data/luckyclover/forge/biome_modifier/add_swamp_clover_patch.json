@@ -1,0 +1,9 @@
+{
+  "type": "luckyclover:add_features_by_filter",
+  "allowed_biomes": "#forge:is_swamp",
+  "denied_biomes": ["minecraft:lush_caves", "minecraft:mushroom_fields"],
+  "min_temperature": 0.1,
+  "max_temperature": 0.95,
+  "features": "luckyclover:patch_swamp_clover",
+  "step": "vegetal_decoration"
+}

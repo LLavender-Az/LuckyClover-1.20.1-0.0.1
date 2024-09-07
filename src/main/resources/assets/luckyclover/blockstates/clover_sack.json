@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=east": {
+      "model": "luckyclover:block/clover_sack",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "luckyclover:block/clover_sack",
+      "y": 180
+    },
+    "facing=south": {
       "model": "luckyclover:block/clover_sack"
+    },
+    "facing=west": {
+      "model": "luckyclover:block/clover_sack",
+      "y": 90
     }
   }
 }

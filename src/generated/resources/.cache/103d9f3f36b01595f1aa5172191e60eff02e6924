@@ -1,7 +1,4 @@
-// 1.20.1	2024-03-23T00:15:20.352549	Registries
-6cccafd05cfc06070fcbb32f7bbc0dca2363bdbb data/luckyclover/forge/biome_modifier/add_clover.json
-1683ffb611609450bd6d44a8030c152b6efa8bc6 data/luckyclover/forge/biome_modifier/add_clover_jungle.json
-9ebddcc04c80ec9692ec86c14dea0327b85c16c2 data/luckyclover/forge/biome_modifier/add_clover_swamp.json
+// 1.20.1	2024-08-11T02:29:15.945755	Registries
 43474a5eef88b0a776b7efb30e72301b057ff56b data/luckyclover/worldgen/configured_feature/clover.json
 f2ee7c5e16db716b5429547ccde4088df18bc998 data/luckyclover/worldgen/configured_feature/clover_jungle.json
 8250c04c3be1c667f67891e385f4b1becc37a7f0 data/luckyclover/worldgen/configured_feature/clover_swamp.json

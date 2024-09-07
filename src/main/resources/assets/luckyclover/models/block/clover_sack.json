@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:block/cube",
+  "parent": "minecraft:block/orientable_vertical",
   "textures": {
+    "particle": "luckyclover:block/sack_side_tied",
     "down": "luckyclover:block/sack_bottom",
-    "east": "luckyclover:block/clover_sack_side_icon",
-    "north": "luckyclover:block/sack_side_tied",
-    "particle": "luckyclover:block/clover_sack_top",
-    "south": "luckyclover:block/sack_side_tied",
     "up": "luckyclover:block/clover_sack_top",
-    "west": "luckyclover:block/clover_sack_side_icon"
+    "north": "luckyclover:block/clover_sack_side_icon",
+    "east": "luckyclover:block/sack_side",
+    "south": "luckyclover:block/sack_side",
+    "west": "luckyclover:block/sack_side_tied"
   }
 }

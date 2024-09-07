@@ -1,7 +1,7 @@
 package net.lavender.luckyclover;
 
-import net.lavender.luckyclover.common.init.block.BlockInit;
-import net.lavender.luckyclover.common.init.item.LCItems;
+import net.lavender.luckyclover.common.block.LCBlocks;
+import net.lavender.luckyclover.common.item.LCItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -16,20 +16,19 @@ public class ModCreativeTab {
 
     public static final RegistryObject<CreativeModeTab> LUCKYCLOVER_CREATIVE_TAB = CREATIVE_MODE_TABS.register("luckyclover_creative_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(LCItems.FOUR_LEAF_CLOVER.get()))
-                    .title(Component.literal("Lucky Clover"))
+                    .title(Component.literal("Lucky Clover!"))
                     .displayItems((pParameters, pOutput) -> {
 
 
-                        pOutput.accept(BlockInit.CLOVER_SACK.get());
+                        pOutput.accept(LCBlocks.CLOVER_SACK.get());
 
-                        pOutput.accept(BlockInit.CLOVER_PLANT.get());
+                        pOutput.accept(LCBlocks.CLOVER_PLANT.get());
                         pOutput.accept(LCItems.FOUR_LEAF_CLOVER.get());
                         pOutput.accept(LCItems.GOLDEN_CLOVER.get());
 
                         pOutput.accept(LCItems.LUCK_CHARM.get());
-
-
-
+                        pOutput.accept(LCItems.LUCKY_HORSESHOE.get());
+                        pOutput.accept(LCItems.CITRINE_RING.get());
 
 
 
