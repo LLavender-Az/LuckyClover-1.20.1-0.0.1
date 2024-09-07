@@ -1,0 +1,37 @@
+{
+  "parent": "luckyclover:main/root",
+  "criteria": {
+    "dream_catcher": {
+      "conditions": {
+        "location": [
+          {
+            "block": "luckyclover:dream_catcher",
+            "condition": "minecraft:block_state_property"
+          }
+        ]
+      },
+      "trigger": "minecraft:placed_block"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "luckyclover.advancement.place_dream_catcher.desc"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "luckyclover:dream_catcher"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "luckyclover.advancement.place_dream_catcher"
+    }
+  },
+  "requirements": [
+    [
+      "dream_catcher"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

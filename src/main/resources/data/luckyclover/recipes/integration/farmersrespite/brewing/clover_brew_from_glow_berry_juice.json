@@ -1,0 +1,21 @@
+{
+  "type": "farmersrespite:brewing",
+  "base": {
+    "count": 1000,
+    "fluid": "luckyclover:glow_berry_juice"
+  },
+  "cookingtime": 2400,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "luckyclover:four_leaf_clover"
+    },
+    {
+      "tag": "forge:fruit"
+    }
+  ],
+  "result": {
+    "count": 1000,
+    "fluid": "luckyclover:clover_brew"
+  }
+}

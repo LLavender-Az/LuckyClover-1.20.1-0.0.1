@@ -7,5 +7,5 @@
       "loot_table_id": "minecraft:chests/woodland_mansion"
     }
   ],
-  "lootTable": "luckyclover:chests/lc_clover_chest"
+  "lootTable": "luckyclover:chests/lc_woodland_mansion"
 }

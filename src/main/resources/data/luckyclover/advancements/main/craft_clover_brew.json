@@ -1,0 +1,38 @@
+{
+  "parent": "luckyclover:main/get_four_leaf_clover",
+  "criteria": {
+    "clover_brew": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "luckyclover:clover_brew"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "luckyclover.advancement.craft_clover_brew.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "luckyclover:clover_brew"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "luckyclover.advancement.craft_clover_brew"
+    }
+  },
+  "requirements": [
+    [
+      "clover_brew"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

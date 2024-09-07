@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "entries": [
+    "luckyclover:add_loot_abandoned_mineshaft",
+    "luckyclover:add_loot_bastion_hoglin_stable",
+    "luckyclover:add_loot_bastion_other",
+    "luckyclover:add_loot_desert_pyramid",
+    "luckyclover:add_loot_pillager_outpost",
+    "luckyclover:add_loot_ruined_portal",
+    "luckyclover:add_loot_simple_dungeon",
+    "luckyclover:add_loot_woodland_mansion",
+    "luckyclover:add_loot_village_plains_house",
+    "luckyclover:add_loot_village_taiga_house",
+    "luckyclover:add_loot_village_temple",
+    "luckyclover:clover_brew_from_village_plains_house",
+    "luckyclover:clover_brew_from_village_taiga_house",
+    "luckyclover:golden_pendant_from_bastion_treasure",
+    "luckyclover:gold_ring_from_pillager_outpost",
+    "luckyclover:gold_ring_from_simple_dungeon",
+    "luckyclover:gold_ring_from_woodland_mansion",
+    "luckyclover:lucky_horseshoe_from_abandoned_mineshaft",
+    "luckyclover:lucky_horseshoe_from_pillager_outpost",
+    "luckyclover:lucky_horseshoe_from_simple_dungeon",
+    "luckyclover:lucky_horseshoe_from_woodland_mansion"
+    ]
+}

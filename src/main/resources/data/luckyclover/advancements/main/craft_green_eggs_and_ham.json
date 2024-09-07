@@ -1,0 +1,38 @@
+{
+  "parent": "luckyclover:main/get_four_leaf_clover",
+  "criteria": {
+    "green_eggs_and_ham": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "luckyclover:green_eggs_and_ham"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "luckyclover.advancement.craft_green_eggs_and_ham.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "luckyclover:green_eggs_and_ham"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "luckyclover.advancement.craft_green_eggs_and_ham"
+    }
+  },
+  "requirements": [
+    [
+      "green_eggs_and_ham"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

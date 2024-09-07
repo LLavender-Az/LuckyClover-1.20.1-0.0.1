@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "key": {
+    "W": {
+      "item": "minecraft:bowl"
+    },
+    "L": {
+      "tag": "forge:cooked_ham"
+    },
+    "E": {
+      "item": "luckyclover:green_egg"
+    },
+    "C": {
+      "item": "luckyclover:four_leaf_clover"
+    },
+    "S": {
+      "item": "minecraft:glow_berries"
+    }
+  },
+  "pattern": [
+    "LCS",
+    "WEE"
+  ],
+  "result": {
+    "item": "luckyclover:green_eggs_and_ham"
+  },
+  "show_notification": true
+}

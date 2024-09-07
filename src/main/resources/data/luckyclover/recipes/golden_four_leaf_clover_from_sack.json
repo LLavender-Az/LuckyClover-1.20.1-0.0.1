@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "golden_clover",
+  "ingredients": [
+    {
+      "item": "luckyclover:golden_clover_sack"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "luckyclover:golden_four_leaf_clover"
+  }
+}

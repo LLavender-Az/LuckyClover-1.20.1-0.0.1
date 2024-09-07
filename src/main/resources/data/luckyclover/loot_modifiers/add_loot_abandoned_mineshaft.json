@@ -7,5 +7,5 @@
       "loot_table_id": "minecraft:chests/abandoned_mineshaft"
     }
   ],
-  "lootTable": "luckyclover:chests/lc_golden_clover_chest"
+  "lootTable": "luckyclover:chests/lc_abandoned_mineshaft"
 }

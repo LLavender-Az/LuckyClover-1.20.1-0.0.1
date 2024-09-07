@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_three_leaf_clover": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "luckyclover:three_leaf_clover"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "luckyclover:green_dye_from_three_leaf_clover"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_three_leaf_clover",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "luckyclover:green_dye_from_three_leaf_clover"
+    ]
+  },
+  "sends_telemetry_event": false
+}

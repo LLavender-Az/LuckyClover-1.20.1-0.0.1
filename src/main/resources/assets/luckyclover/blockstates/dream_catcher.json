@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "luckyclover:block/dream_catcher_wall",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "luckyclover:block/dream_catcher_wall",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "luckyclover:block/dream_catcher_wall"
+    },
+    "facing=west": {
+      "model": "luckyclover:block/dream_catcher_wall",
+      "y": 90
+    }
+  }
+}

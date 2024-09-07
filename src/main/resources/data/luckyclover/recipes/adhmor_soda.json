@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "key": {
+    "W": {
+      "item": "minecraft:water_bucket"
+    },
+    "L": {
+      "item": "luckyclover:glow_berry_juice"
+    },
+    "E": {
+      "item": "luckyclover:empty_can"
+    },
+    "C": {
+      "item": "luckyclover:four_leaf_clover"
+    },
+    "S": {
+      "item": "luckyclover:four_leaf_clover"
+    }
+  },
+  "pattern": [
+    "LCS",
+    "WEE"
+  ],
+  "result": {
+    "count": 2,
+    "item": "luckyclover:adhmor_soda"
+  },
+  "show_notification": true
+}

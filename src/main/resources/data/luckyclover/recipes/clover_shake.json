@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "key": {
+    "#": {
+      "item": "minecraft:ice"
+    },
+    "m": {
+      "tag": "forge:milk"
+    },
+    "c": {
+      "item": "luckyclover:clover_brew"
+    },
+    "b": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "pattern": [
+    "#c",
+    "bm"
+  ],
+  "result": {
+    "item": "luckyclover:clover_shake"
+  },
+  "show_notification": true
+}

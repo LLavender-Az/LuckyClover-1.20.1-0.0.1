@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_golden_four_leaf_clover": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:golden_four_leaf_clover"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "luckyclover:golden_four_leaf_clover"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_golden_four_leaf_clover",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "luckyclover:golden_four_leaf_clover"
+    ]
+  },
+  "sends_telemetry_event": false
+}

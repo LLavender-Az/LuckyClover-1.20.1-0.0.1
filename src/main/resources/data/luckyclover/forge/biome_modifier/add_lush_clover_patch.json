@@ -1,0 +1,7 @@
+{
+  "type": "luckyclover:add_features_by_filter",
+  "allowed_biomes": "minecraft:lush_caves",
+  "denied_biomes": ["minecraft:mushroom_fields"],
+  "features": "luckyclover:patch_lush_clover",
+  "step": "vegetal_decoration"
+}

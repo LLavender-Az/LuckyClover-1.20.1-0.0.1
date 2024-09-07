@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "seeds": {
+      "conditions": {},
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:textures/block/spruce_planks.png",
+    "description": {
+      "translate": "luckyclover.advancement.root.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "luckyclover:clover_sack"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "luckyclover.advancement.root"
+    }
+  },
+  "requirements": [
+    [
+      "seeds"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

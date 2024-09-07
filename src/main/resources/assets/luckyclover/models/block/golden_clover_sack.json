@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/orientable_vertical",
+  "textures": {
+    "particle": "luckyclover:block/sack_side_tied",
+    "down": "luckyclover:block/sack_bottom",
+    "up": "luckyclover:block/golden_clover_sack_top",
+    "north": "luckyclover:block/clover_sack_front",
+    "east": "luckyclover:block/sack_side_tied",
+    "south": "luckyclover:block/sack_side",
+    "west": "luckyclover:block/sack_side_tied"
+  }
+}

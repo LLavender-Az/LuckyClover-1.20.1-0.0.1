@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "ingredient": {
+    "item": "luckyclover:ham"
+  },
+  "result": "luckyclover:smoked_ham"
+}

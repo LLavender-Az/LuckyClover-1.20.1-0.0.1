@@ -1,0 +1,38 @@
+{
+  "parent": "luckyclover:main/root",
+  "criteria": {
+    "empty_can": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "luckyclover:empty_can"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "luckyclover.advancement.craft_empty_can.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "luckyclover:empty_can"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "luckyclover.advancement.craft_empty_can"
+    }
+  },
+  "requirements": [
+    [
+      "empty_can"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,14 +1,17 @@
 package net.lavender.luckyclover;
 
 import com.mojang.logging.LogUtils;
-import net.lavender.luckyclover.common.block.LCBlocks;
-import net.lavender.luckyclover.common.item.LCItems;
-import net.lavender.luckyclover.datagen.data.ModBiomeFeatures;
-import net.lavender.luckyclover.datagen.data.ModBiomeModifiers;
-import net.lavender.luckyclover.datagen.data.ModPlacementModifiers;
-import net.lavender.luckyclover.datagen.loot.ModLootModifiers;
-import net.lavender.luckyclover.common.Composting;
-import net.lavender.luckyclover.event.ModBrewingRecipeSetup;
+import net.lavender.luckyclover.content.CreativeTab;
+import net.lavender.luckyclover.content.block.ModBlocks;
+import net.lavender.luckyclover.content.fluid.ModFluids;
+import net.lavender.luckyclover.content.item.ModItems;
+import net.lavender.luckyclover.data.logic.ModBiomeFeatures;
+import net.lavender.luckyclover.data.logic.ModBiomeModifiers;
+import net.lavender.luckyclover.data.logic.ModPlacementModifiers;
+import net.lavender.luckyclover.data.logic.loot.ModLootModifiers;
+import net.lavender.luckyclover.content.data_values.CompostingValues;
+import net.lavender.luckyclover.data.logic.ModBrewingRecipeSetup;
+import net.lavender.luckyclover.data.logic.util.Configuration;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
@@ -36,27 +39,31 @@ public class LuckyClover {
 
     public LuckyClover() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
-        ModCreativeTab.register(modEventBus);
+        CreativeTab.register(modEventBus);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Configuration.COMMON_CONFIG);
-        ModLootModifiers.register(modEventBus);
-        LCItems.ITEMS.register(modEventBus);
-        LCBlocks.BLOCKS.register(modEventBus);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Configuration.CLIENT_CONFIG);
+        ModItems.ITEMS.register(modEventBus);
+        ModBlocks.BLOCKS.register(modEventBus);
+        ModFluids.FLUIDS.register(modEventBus);
+        ModFluids.FLUID_TYPES.register(modEventBus);
         ModPlacementModifiers.PLACEMENT_MODIFIERS.register(modEventBus);
-        ModBiomeModifiers.BIOME_MODIFIER_SERIALIZERS.register(modEventBus);
         ModBiomeFeatures.FEATURES.register(modEventBus);
+        ModBiomeModifiers.BIOME_MODIFIER_SERIALIZERS.register(modEventBus);
+        ModLootModifiers.LOOT_MODIFIER_SERIALIZERS.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
-        modEventBus.addListener(Composting::addCompostValues);
-        MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
+        modEventBus.addListener(CompostingValues::addCompostValues);
+        MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         BrewingRecipeRegistry.addRecipe(new ModBrewingRecipeSetup(Potions.THICK,
-                LCItems.GOLDEN_CLOVER.get(), Potions.LUCK));
+                ModItems.GOLDEN_FOUR_LEAF_CLOVER.get(), Potions.LUCK));
+
         event.enqueueWork(() -> {
-            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(LCBlocks.CLOVER_PLANT.getId(), LCBlocks.POTTED_CLOVER);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CLOVER.getId(), ModBlocks.POTTED_CLOVER);
         });
+
     }
 
 

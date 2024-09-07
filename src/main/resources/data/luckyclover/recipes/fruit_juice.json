@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "key": {
+    "W": {
+      "item": "minecraft:water_bucket"
+    },
+    "L": {
+      "item": "luckyclover:glow_berry_juice"
+    },
+    "E": {
+      "item": "luckyclover:empty_can"
+    },
+    "C": {
+      "tag": "forge:fruit"
+    }
+  },
+  "pattern": [
+    "LCC",
+    "WEE"
+  ],
+  "result": {
+    "count": 2,
+    "item": "luckyclover:fruit_juice"
+  },
+  "show_notification": true
+}

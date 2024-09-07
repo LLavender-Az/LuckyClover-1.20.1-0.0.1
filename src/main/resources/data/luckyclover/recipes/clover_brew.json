@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "key": {
+    "#": {
+      "tag": "forge:fruit"
+    },
+    "c": {
+      "item": "luckyclover:four_leaf_clover"
+    },
+    "b": {
+      "item": "minecraft:glass_bottle"
+    },
+    "h": {
+      "item": "luckyclover:glow_berry_juice"
+    }
+  },
+  "pattern": [
+    "#ch",
+    "c#b"
+  ],
+  "result": {
+    "item": "luckyclover:clover_brew"
+  },
+  "show_notification": true
+}

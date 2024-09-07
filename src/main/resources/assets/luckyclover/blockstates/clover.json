@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "luckyclover:block/clover_variant_0"
+      },
+      {
+        "model": "luckyclover:block/clover_variant_1"
+      }
+    ]
+  }
+}

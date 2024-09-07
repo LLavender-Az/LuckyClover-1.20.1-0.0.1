@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "luckyclover:three_leaf_clover"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "minecraft:green_dye"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}
